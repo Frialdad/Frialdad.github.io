@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genius | Ayudante de Transcripción</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="src/static/genius.ico">
+  <link rel="stylesheet" type="text/css" href="src/styles.css">
+  <script src="/src/scripts_letra.js"></script>
+  <script src="/src/scripts_musica.js"></script>
+  <script src="/src/dark-mode.js"></script>
+
+
+  <!-- Metadatos adicionales -->
+  <meta name="description"
+    content="Genius Ayudante de Transcripción es una herramienta que ayuda a transcribir letras de canciones.">
+  <meta name="keywords" content="Genius, Transcripción, Letras, Canciones">
+  <meta name="author" content="Frialdad">
+  <meta property="og:title" content="Genius | Ayudante de Transcripción">
+  <meta property="og:description"
+    content="Genius Ayudante de Transcripción es una herramienta que ayuda a transcribir letras de canciones.">
+  <meta property="og:image" content="https://images.genius.com/0ca83e3130e1303a7f78ba351e3091cd.1000x1000x1.png">
+  <meta property="og:url" content="https://genius.com/artists/Genius-en-espanol">
+
+</head>
+
+<body>
+  <h1 id="titulo">Ayudante de Transcripción</h1>
+
+  <div class="toggle-container">
+    <label class="switch">
+      <input type="checkbox" id="dark-mode-toggle" onchange="toggleDarkMode()">
+      <span class="slider round"></span>
+    </label>
+    <span class="toggle-label">Modo Oscuro</span>
+    <br />
+  </div>
+
+  <div class="container">
+    <textarea id="input" placeholder="¡Transcribe aquí!" oninput="checkText()"></textarea>
+    <div class="output-box">
+      <p id="output"></p>
+    </div>
+  </div>
+
+  <div>
+    <input type="text" id="youtube-url" class="url-input" placeholder="URL de YouTube aquí">
+    <input type="text" id="soundcloud-url" class="url-input" placeholder="URL de SoundCloud aquí">
+  </div>
+
+  <div>
+    <br />
+    <div id="youtube-embed-container" class="embed-container"></div>
+    <div id="soundcloud-embed-container" class="embed-container"></div>
+  </div>
+
+  <div class="button-container">
+    <button onclick="copyText()">Copiar Letra</button>
+    <button onclick="clearText()">Vaciar Letra</button>
+  </div>
+</body>
+
+</html>
