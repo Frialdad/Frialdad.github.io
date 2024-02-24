@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,9 +16,35 @@
             font-size: 2em;
             color: #007BFF;
         }
+
+        #links-container {
+            margin-top: 20px;
+        }
+
+        #links-container a {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        #links-container a:hover {
+            color: #007BFF;
+        }
     </style>
 </head>
+
 <body>
     <h1>Bienvenido</h1>
+
+    <div id="links-container">
+        <h2>Links interesantes</h2>
+        <ul>
+            <li><a href="https://frialdad.github.io/lyrics-editor">Lyrics editor</a></li>
+        </ul>
+    </div>
 </body>
+
 </html>
