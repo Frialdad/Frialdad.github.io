@@ -55,6 +55,13 @@ document.addEventListener("DOMContentLoaded", function () {
             subtitle: "Интересные ссылки",
             linkText: "Редактор текстов",
             scriptsText: "Полезные скрипты для Genius"
+        },
+         tr: {
+            tituloPagina: "Frialdad'ın Sayfası",
+            title: "Hoşgeldiniz",
+            subtitle: "İlginç Bağlantılar",
+            linkText: "Şarkı Sözleri Editörü",
+            scriptsText: "Genius için Faydalı Betikler"
         }
     };
 
